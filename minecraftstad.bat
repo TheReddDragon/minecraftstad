@@ -2,6 +2,8 @@
 echo Loading Minecraftstad libraries...
 timeout /NOBREAK 5 > nul
 @echo on
+set product=Minecraftstad: A Bukkit Windows Launcher
+set ver=1.0.0
 IF EXIST "data" goto cont
 goto new
 
@@ -45,8 +47,6 @@ echo %random%%random%%random% > data
 goto cont
 
 :cont
-set ver=1.0.0
-set product=Minecraftstad: A Bukkit Windows Launcher
 set debugname=Minecraftstad-Spigot
 set debugger=ZDebug
 set debuggerver=1.0.0
@@ -72,7 +72,7 @@ echo. >> MinecraftstadLog.txt
 echo Minecraftstad Log -- Created on %date% at %time%. >> MinecraftstadLog.txt
 echo Minecraftstad is running normally on %date% @ %time%. >> MinecraftstadLog.txt
 cls
-title %prodshort% vs. %version% -- Running
+title %prodshort% vs. %ver% -- Running
 echo Running %prodshort% Version %version%...
 color 3f
 echo Minecraftstad has initialized Java @ %time% on %date% successfully. >> MinecraftstadLog.txt
